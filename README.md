@@ -28,5 +28,5 @@ We truly appreciate the importance of these github repositories  in the developm
 * https://github.com/lss-1138/SparseTSF <br>
 * https://github.com/showmeon/TimeEmb/tree/main/TimeEmb-main <br>
 ## 📬 Contact
-If you have questions or encounter issues, please [open an issue]() or contact us at **sami DOT benbrahim AT mail DOT concordia DOT ca**.
+If you have questions or encounter issues, please [open an issue](https://github.com/lear-ner97/LightTFF/issues) or contact us at **sami DOT benbrahim AT mail DOT concordia DOT ca**.
 
