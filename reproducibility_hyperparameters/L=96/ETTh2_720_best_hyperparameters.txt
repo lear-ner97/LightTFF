@@ -1,0 +1,14 @@
+Best MSE: 0.4083469808101654
+Best MAE: 0.4344475567340851
+Best Hyperparameters:
+static: conv
+learning_rate: 0.02
+batch_size: 128
+seq_len: 96
+pred_len: 720
+train_epochs: 30
+kernel_size: 8
+bias_trend: True
+scale: 0.02
+model_type: linear
+d_model: 256

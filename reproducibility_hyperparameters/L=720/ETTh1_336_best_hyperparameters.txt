@@ -1,0 +1,14 @@
+Best MSE: 0.42008936405181885, no aggregation is required in CPTF branhc, but keep self.conv1d active in __init__ (for reproducibility matter)
+Best MAE: 0.42646920680999756
+Best Hyperparameters:
+static: conv
+learning_rate: 0.04
+batch_size: 256
+seq_len: 720
+pred_len: 336
+train_epochs: 30
+kernel_size: 16
+bias_trend: True
+scale: 0.02
+model_type: mlp
+d_model: 128
