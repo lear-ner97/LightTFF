@@ -25,9 +25,8 @@ This is the official implementation of our paper : "LightTFF: Lightweight Time-F
 *The folders data_provider and utlis contain other useful functions needed for model training such as data loading and evaluations metrics. <br>
 ## Acknowledgement
 We truly appreciate the importance of these github repositories  in the development of our framework:
-* lss-1138/SparseTSF: [TPAMI 2026 & ICML 2024 Oral] Official repository of the SparseTSF paper: "SparseTSF: Modeling Long-term Time Series Forecasting with 1k Parameters". This work is developed by the Lab of Professor Weiwei Lin (linww@scut.edu.cn), South China University of Technology; Pengcheng Laboratory.
-* TimeEmb/TimeEmb-main at main · showmeon/TimeEmb
-. <br>
+* https://github.com/lss-1138/SparseTSF <br>
+* https://github.com/showmeon/TimeEmb/tree/main/TimeEmb-main <br>
 ## 📬 Contact
 If you have questions or encounter issues, please [open an issue]() or contact us at **sami DOT benbrahim AT mail DOT concordia DOT ca**.
 
