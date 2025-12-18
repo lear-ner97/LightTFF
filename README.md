@@ -3,15 +3,15 @@ This is the official implementation of our paper : "LightTFF: Lightweight Time-F
 ## step-by-step guidelines to reproduce results
 1-	Put all the files of this Github repository in the same folder <br>
 2-	To ensure reproducibility of the results located in results folder, please run the code using the environment specified in environment.yml <br>
-3-	Once the environment is set up, choose which forecasting scenario depending on three parameters: <br>
-*dataset: specify the dataset’s name in lines 25 and 27 of the main file, and pay attention that the data path in line 26 is similar to your data path <br>
-*input sequence length $L$: specify its value in line 128 of the main file (hyperparameters’ section), and choose a value from 96, 192, 336, 720. <br>
-*future horizon length $H$: specify its value in line 38 of the main file, and choose a value from 96, 192, 336, 720. <br>
-4-  Once your forecasting scenario is defined (dataset, L, H), go to its corresponding file in results folder. The results folder is composed of three folders, each one corresponding to a different input sequence length L. Inside each folder, you’ll find 8 files, corresponding to all possible combinations of datasets and future horizon lengths H. Choose a scenario and open its corresponding file. Then, do the following changes in main.py and LightTFF.py: <br>
-•	In main.py: please fill out the values of the hyperparameters in lines 24 to 41 from the .txt file. If the .txt file says static =”conv”, then activate line38 (bias trend feature), and set the variable bias_trend to its corresponding value in the .txt file. Otherwise, if static==’ma’, comment line 38.<br>
+3-	Once the environment is set up, choose the forecasting scenario depending on three parameters: <br>
+*dataset: specify the dataset’s name in lines 24 and 25 of the main file, and pay attention that the data path in line 47 is similar to your data path <br>
+*input sequence length $L$: specify its value in line 26 of the main file, and choose a value from 96, 336, and 720. <br>
+*future horizon length $H$: specify its value in line 27 of the main file, and choose a value from 96, 192, 336, and 720. <br>
+4-  Once your forecasting scenario is defined (dataset, L, H), go to its corresponding file in the folder "reproducibility_hyperparameters". The folder is composed of three sub-folders, each one corresponding to a different input sequence length L. Inside each sub-folder, you’ll find 8 files, corresponding to all possible combinations of datasets and future horizon lengths H. Choose a scenario and open its corresponding file. Then, do the following changes in main.py and LightTFF.py: <br>
+•	In main.py: please fill out the values of the hyperparameters in lines 30 to 41 from the .txt file. If the .txt file says static =”conv”, then activate line38 (bias trend feature), and set the variable bias_trend to its corresponding value in the .txt file. Else if static==’ma’, comment line 38.<br>
 •	In the file LightTFF.py, please follow the guidelines throughout the definition of the class Model. The class is clearly commented and distinguishes the two cases when static==’conv’ and static== ‘ma’. <br>
-5- Run main.py. At the end, you should get the same results as in the .txt file. If not, it means that either you missed some step(s) in the previous process. <br>
-*Expected output: test mse, test mae, train vs validation loss curves, prediction vs true test data plot <br>
+5- Run main.py. At the end, you should get the same results as in the .txt file. If not, it means that you missed some step(s) in the previous process. <br>
+*Expected output: test mse, test mae, train vs validation loss curves, plot prediction result vs true test data <br>
 
 ## Explanation of the files (in alphabetic order): 
 *acf.py: used to plot the Autocorrelation Function of each dataset <br>
